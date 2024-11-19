@@ -1,0 +1,161 @@
+body {
+  margin: 0; background-color: rgb(144, 238, 191); font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.header {
+  background-color: white; width: 100%; display: flex; align-items: center;
+  justify-content: space-around; position: fixed; z-index: 1;
+}
+.header-logo {
+  width: 100px; padding: 20px; cursor: pointer;
+}
+.left-section{
+  display: flex; align-items: center;
+}
+#header-title {
+  color: darkslategray; cursor: pointer;
+}
+.right-section {
+  display: flex; column-gap: 60px;
+}
+.right-section button {
+  color: darkslategray; font-size: 25px; font-weight: 500; padding: 15px;
+  transition: background-color 0.7s ease, transform 0.7s ease;
+  cursor: pointer; border: none; background-color: transparent;
+}
+.right-section button:hover {
+  background-color: rgb(202, 245, 223); transform: scale(0.7s);
+}
+.whole {
+  display: flex; flex-direction: column; align-items: center;
+  padding: 130px 70px 150px 70px;
+}
+.Heading {
+  color: darkslategray; padding-top: 30px; font-size: 30px; margin: 0; text-decoration: underline; display: flex; justify-content: center; text-align: center;
+}
+.first {
+  display: flex; column-gap: 40px; padding-top: 80px; align-items: center;
+}
+.first-half {
+  background-color: white; border-radius: 20px; padding: 50px 30px 50px 40px;
+  max-width: 600px;
+}
+.welcome-line {
+  font-size: 50px; line-height: 80px; margin: 0; color: darkslategray; margin-bottom: 40px;
+}
+.second-line {
+  color: darkslategray;
+}
+.introduction-line {
+  font-size: x-large;
+}
+.pic {
+  border-radius: 20px;
+}
+.join-introduction-line,
+.fourth,
+.second {
+  background-color: rgb(202, 245, 223); margin-top: 50px; display: grid; grid-template-columns: 1fr; max-width: 1300px; border-radius: 10px;
+  padding: 30px 40px 20px 40px;
+}
+.why-part {
+  display: flex; justify-content: center; align-items: center; column-gap: 100px; padding-top: 50px;
+}
+.heading2 {
+  color: darkslategray; font-size: 35px; margin: 0; text-decoration: underline;
+}
+.introduction-line2 {
+  font-size: x-large; background-color: white; padding: 20px 50px 20px 50px; margin-left: 50px;
+  border-radius: 10px; max-width: 600px; color: darkslategray; flex: 1;
+}
+.introduction-line2-lists {
+  list-style-type: none;
+}
+.introduction-line2-lists li {
+  position: relative; padding-left: 25px; margin-bottom: 30px; 
+}
+.introduction-line2-lists li::before {
+  content: ''; background-image: url('logos/check-mark-icon.png'); 
+  background-size: contain; background-repeat: no-repeat; display: inline-block; 
+  position: absolute; left: -50px; top: 5px; width: 30px; height: 30px;
+}
+.why-class-pic {
+  flex: 1; margin-right: -100px; 
+}
+.why-pic {
+  width: 90%; 
+}
+.register-button {
+  font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: 40px;
+  background-color: darkslategray; color: white; padding: 12px 25px 12px 25px;
+  border: none; border-radius: 8px; margin-top: 30px; cursor: pointer;
+  transition: background-color 0.5s ease, transform 0.5s ease;
+} 
+.register-button:hover {
+  background-color: rgb(56, 106, 106); transform: scale(0.5s);
+}
+.register-button:active {
+  background-color: rgb(69, 129, 129);
+}
+.footer {
+  background-color: white; width: 100%; padding: 30px 0px 30px 0px;
+}
+.download-suggest {
+  display: flex; justify-content: center; font-size: x-large; padding-left: 80px;
+  padding-right: 80px; text-align: center;
+}
+.download-links {
+  display: flex; align-items: center; padding: 30px; column-gap: 20px;
+  justify-content: center;
+}
+.image-links {
+  width: 150px; cursor: pointer;
+}
+.image {
+  width: 100%;
+}
+@media (min-width: 1396px) and (max-width: 1707px) {
+  .why-class-pic {
+    margin-right: -40px;
+  }
+}
+@media (max-width: 1229px) {
+  .why-class-pic {
+    display: none;
+  }
+  .introduction-line2 {
+    margin-left: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .AboutUs {
+    display: none;
+  }
+}
+@media (max-width: 1152px) {
+  .first-half {
+    max-width: 100%;
+  }
+  .second-half {
+    display: none;
+  }
+}
+@media (min-width: 877px) and (max-width: 1024px) {
+  .right-section {
+    column-gap: 10px;
+  }
+}
+@media (max-width: 854px) {
+  .right-section {
+    flex-direction: column; row-gap: 5px; margin: 5px 5px 5px 10px;
+  }
+}
+@media (max-width: 615px) {
+  .whyKhata {
+    display: none;
+  }
+}
+@media (max-width: 512px) {
+  .right-section {
+    display: none;
+  }
+}

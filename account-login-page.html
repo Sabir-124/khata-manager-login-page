@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Login to KhataManager</title>
+    <link rel="icon" href="logos/intro-logo.png" type="image/png">
+    <link rel="stylesheet" href="CSS/account-login-page.css">
+  </head>
+
+  <body>
+
+    <div class="whole">
+
+      <div class="sign-up-part">
+        <div class="heading">
+          <div>
+            <img style="width: 80px;" alt="web-logo" src="logos/intro-logo.png">
+          </div>
+          <div><u>Create Account</u> </div>
+        </div>
+        <u class="suggestion-line">Join us today by creating your account and unlock exclusive features tailored just for you!</u>
+
+        <div class="signup-container">
+          <form class="create-account-part">
+            <div class="input-part">
+              <label for="name" class="input-name">Name</label>
+              <input title="Enter your name" type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="input-part">
+              <label for="email" class="input-name">Email Address</label>
+              <input title="Enter your email" type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="input-part">
+              <label for="password" class="input-name">Password</label>
+              <input title="Enter your password" type="password" name="password" id="password" placeholder="Enter your password" required>
+              <br>
+              <div class="showPassword-part">
+                <div><input type="checkbox" id="showPassword"></div>
+                <div><label for="showPassword">Show Password</label></div>
+              </div>
+            </div>
+            <div>
+              <button type="submit" class="signup-button">Sign up</button>
+            </div>
+            
+          </form>
+        </div>
+
+        <p style="font-size: large; font-weight: 700; margin: 0;">OR</p>
+
+        <div class="signup-with-accounts">
+          <div> 
+            <button class="google-button">
+              <img alt="Google Icon" class="google-icon" src="logos/google.png">
+              <span>Sign up with Google</span>
+            </button>
+          </div>
+          <div>
+            <button class="gmail-button">
+              <img alt="Gmail Icon" class="gmail-icon" src="logos/gmail.png">
+              <span>Continue with Email</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <script>
+      const passwordInput = document.getElementById('password');
+      const showPasswordCheckbox = document.getElementById('showPassword');
+
+      showPasswordCheckbox.addEventListener('change', () => {
+        if (showPasswordCheckbox.checked) {
+          passwordInput.type = 'text';
+        } else {
+          passwordInput.type = 'password';
+        }
+      });
+    </script>
+
+  </body>
+</html>

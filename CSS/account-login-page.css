@@ -1,0 +1,99 @@
+body {
+  background-image: url('logos/login-page.png');
+  background-size: contain; background-position: left; 
+  background-attachment: fixed; background-repeat: no-repeat; 
+  background-color: rgb(144, 238, 191); font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.whole {
+  display: flex; justify-content: center; align-items: center; height: 100vh; color: darkslategray;
+}
+.heading {
+  display: flex; font-size: 35px; margin: 0; font-weight: 700; align-items: center; column-gap: 50px;
+}
+.suggestion-line {
+  font-size: larger; margin: 20px 0px 30px;
+}
+.signup-container {
+  width: 100%; max-width: 500px; margin-left: -50px;
+}
+.sign-up-part {
+  display: flex; flex-direction: column; justify-content: center; align-items: center; background-color: rgba(255, 255, 255, 0.5); text-align: center;
+  margin-left: 600px; max-width: 2000px; padding: 30px 50px; border-radius: 30px;
+}
+.create-account-part {
+  text-align: center; display: flex; flex-direction: column; justify-content: center; height: 100%;
+}
+.input-part {
+  margin-bottom: 15px; width: 100%; max-width: 800px; text-align: left;
+}
+.input-part label {
+  display: block; margin-bottom: 6px;
+}
+#password,
+#email,
+#name {
+  padding: 13px 25px; border: none; border-radius: 5px; font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif; color: darkslategray;
+  transition: background-color 0.7s ease, transform 0.7s ease; width: 100%;
+}
+#password:focus,
+#email:focus,
+#name:focus,
+#password:hover,
+#email:hover,
+#name:hover {
+  background-color: rgb(239, 252, 247); transform: scale(0.7s);
+}
+#password::placeholder,
+#email::placeholder,
+#name::placeholder {
+  color: darkslategray; opacity: 0.5;
+}
+.showPassword-part {
+  display: flex; column-gap: 10px; margin-top: 5px;
+}
+.showPassword-part label,
+#showPassword {
+  cursor: pointer;
+}
+.signup-button {
+  font-size: x-large; font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 180px; height: 100%; background-color: darkcyan; color: white;
+  border: none; border-radius: 30px; padding: 10px 15px; margin-bottom: 15px;
+  margin-left: 50px; cursor: pointer;
+  transition: background-color 0.7s ease, transform 0.7s ease;
+}
+.signup-button:hover {
+  background-color: rgb(49, 162, 162); transform: scale(0.7s);
+}
+.signup-button:active {
+  background-color: rgb(105, 173, 173); transform: scale(0.7s);
+}
+.signup-with-accounts {
+  display: flex; justify-content: center; flex-direction: column; align-items: center; row-gap: 10px; margin-top: 15px;
+}
+.google-button,
+.gmail-button {
+  display: flex; align-items: center; column-gap: 40px; padding: 15px 40px 15px 30px; background-color: white; border-radius: 40px; cursor: pointer; font-family: Verdana, Geneva, Tahoma, sans-serif; color: darkslategray;
+  border-color: darkcyan; border-style: solid; border-width: 3px;
+  transition: background-color 0.7s ease, transform 0.7s ease;
+}
+.google-button:hover,
+.gmail-button:hover {
+  background-color: darkcyan; transform: scale(0.7s); color: white;
+}
+.google-button:hover .google-icon {
+  content: url('logos/google-hover.png');
+}
+.gmail-button:hover .gmail-icon {
+  content: url('logos/gmail-hover.png');
+}
+.gmail-icon,
+.google-icon {
+  width: 30px;
+}
+@media (max-width: 1707px) {
+  .sign-up-part {
+    margin-left: 0;
+  }
+}
